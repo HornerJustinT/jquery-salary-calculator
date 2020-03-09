@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="client.js"></script>
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="alert" id="monthlyCost"></div>
+    <table class="table table-dark" id="workerTable">
+        <thead>
+            <tr>
+                <th>Index</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>ID</th>
+                <th>Job Title</th>
+                <th>Annual Salary</th>
+                <th>Delete Me</th>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+    <form class="form-group"id='formInfo'>
+        <!-- form -->
+        <label for="firstName">First name:</label><br>
+        <input type="text" id="firstName" name="firstName" value="Justin"><br>
+        <label for="lastName">Last name:</label><br>
+        <input type="text" id="lastName" name="lastName" value="Horner"><br>
+        <label for="id">ID:</label><br>
+        <input type="number" id="id" name="id"value=1><br>
+        <label for="jobTitle">Job Title:</label><br>
+        <input type="text" id="jobTitle" name="jobTitle"value="CEO"><br>
+        <label for="annualSalary">Annual Salary:</label><br>
+        <input type="number" id="annualSalary" name="annualSalary"value="100000"><br>
+        <button type="button" id="submitInfo">Submit Info</button>
+    </form>
+</body>
+
+</html>
